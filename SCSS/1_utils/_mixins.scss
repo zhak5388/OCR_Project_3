@@ -1,0 +1,22 @@
+@mixin border($color:blue) 
+{
+    border: 1px dashed $color;    
+}
+
+@mixin flex-center($direction)
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-r
+{
+    @include flex-center(row)
+}
+
+@mixin flex-c
+{
+    @include flex-center(column)
+}

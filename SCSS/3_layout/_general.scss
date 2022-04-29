@@ -1,0 +1,19 @@
+// Definition des bords
+
+.content_wrapper
+{
+    width: calc(100% - (2 * $side_edge));
+    //@include flex-c;
+}
+
+.container_wrapper
+{
+    padding-right: $side_edge;
+    padding-left: $side_edge;
+}
+
+//A mettre dans les fichiers adequats
+header, footer
+{
+    @include flex-r;
+}

@@ -1,0 +1,24 @@
+// 1-Mise en page header
+
+header
+{
+    height: 70px;
+
+    .content_wrapper
+    {
+        height:100%;
+        @include flex-r;
+    }
+    .logo
+    {
+        width:60%;
+        height:50%;
+
+        img
+        {
+            width:100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

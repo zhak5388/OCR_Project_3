@@ -1,0 +1,29 @@
+#card_test
+{
+    display: none;
+}
+
+header, main, footer
+{
+    @include border;
+}
+
+header > *
+{
+    @include border(green);
+}
+
+main > *
+{
+    @include border(orange);
+}
+
+footer > *
+{
+    @include border(red);
+}
+
+.container_wrapper__title section > *
+{
+    @include border;
+}

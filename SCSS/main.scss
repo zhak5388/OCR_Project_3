@@ -1,2 +1,12 @@
-@import "./2_utils/variables";
-@import "./6_test/test";
+@import "./1_utils/variables";
+@import "./1_utils/mixins";
+
+@import "./2_base/base";
+@import "./2_base/typography";
+
+@import "./3_layout/general";
+@import "./3_layout/header";
+@import "./3_layout/main";
+@import "./3_layout/footer";
+
+@import "./4_components/buttons";

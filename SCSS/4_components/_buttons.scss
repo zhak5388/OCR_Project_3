@@ -1,0 +1,144 @@
+.functionning-button
+{
+    width: calc(100% - ($functionning-button-circle-size / 2));
+    height: $functionning-button-height;
+    background-color: $custom-light-grey;
+    border-radius: 20px;
+    box-shadow: 0 10px 5px $custom-grey;
+
+    //A_CORRIGER !!!
+    display: flex;
+    align-items: center;
+    gap: 10%;
+
+    margin-bottom: 20px;
+
+    position: relative;
+
+    //@include border;
+
+    &__number
+    {
+        position: absolute;
+        top: calc($functionning-button-height / 2);
+        left: 0;
+        transform: translate(-50%,-50%);
+
+        display: block;
+        width: $functionning-button-circle-size;
+        height: $functionning-button-circle-size;
+        border-radius: $functionning-button-circle-size;
+        background-color: $color-primary;
+
+        @include flex-c;
+        color: white;
+    }
+
+    i
+    {
+        margin-left: 10%;
+        color:grey;
+        //A VOIR !!!
+    }
+
+    &__title
+    {
+        font-weight: bold;
+    }
+
+    //TEMPORAIRE !!! (Utiliser rendu fin)
+    &:hover
+    {
+        background-color: $color-primary;
+    }
+}
+
+.card_restaurant
+{
+    width: 100%;
+    height: 250px;
+    border-radius: $card-restaurant-border-radius;
+    background-color: white;
+    @include border;
+
+    &__content
+    {
+        width: 100%;
+        height: 100%;
+        //@include border(green);
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        
+        &__image
+        {
+            //@include border(red);
+            height: 75%;
+
+            &__main
+            {
+                border-top-left-radius:$card-restaurant-border-radius;
+                border-top-right-radius:$card-restaurant-border-radius;
+
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &--new
+            {
+                position: relative;
+            }
+
+            
+            &__second--new
+            {
+                position: absolute;
+                top:20px;
+                right: 20px;
+
+                background-color: $card-restaurant-color-new-box;
+                color: $card-restaurant-new-box-font-color;
+                font-weight: bold;
+
+                padding: 7px;
+                border-radius: 3px;
+            }
+        }
+
+        &__body
+        {
+            width: 80%;
+            height: 25%;
+            align-self: center;
+            //@include border(orange);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__title
+            {
+                //@include border(blue);
+                //display: flex;
+                //flex-direction: column;
+                //align-items: flex-start;
+                //justify-content: space-around;
+                h3,p
+                {
+                    margin: auto;
+                    color:black;
+                    
+                    //@include border(red);
+                }
+            }
+
+            &__favorite
+            {
+                @include border(blue);
+                font-size: 25px;
+            }
+
+        }
+    }
+}
