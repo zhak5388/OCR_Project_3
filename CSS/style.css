@@ -14,6 +14,14 @@ h1 {
   font-size: 22px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
 .content_wrapper {
   width: calc(100% - 40px);
 }
@@ -37,6 +45,9 @@ header .content_wrapper {
   justify-content: center;
   align-items: center;
 }
+header .content_wrapper--pages {
+  position: relative;
+}
 header .logo {
   width: 60%;
   height: 50%;
@@ -45,6 +56,14 @@ header .logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+header .back_home_page {
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  transform: translate(0%, -50%);
+  color: #353535;
+  font-size: 20px;
 }
 
 .container_wrapper__location {
@@ -189,7 +208,6 @@ footer .content_wrapper ul {
   height: 100%;
   display: flex;
   flex-direction: column;
-  text-decoration: none;
 }
 .card_restaurant__content__image {
   height: 75%;

@@ -13,3 +13,14 @@ h1
     font-size: 22px;
     //font-family: 'Shrikhand', cursive;
 }
+
+a
+{
+    color:inherit;
+    text-decoration: none;
+    
+    &:visited
+    {
+        color:inherit;
+    }
+}
