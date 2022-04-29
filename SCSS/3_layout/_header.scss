@@ -2,6 +2,8 @@
 
 header
 {
+    @include flex-r;
+    
     height: 70px;
 
     .content_wrapper

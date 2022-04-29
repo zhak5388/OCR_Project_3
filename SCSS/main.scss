@@ -4,9 +4,10 @@
 @import "./2_base/base";
 @import "./2_base/typography";
 
-@import "./3_layout/general";
+@import "./3_layout/wrapper";
 @import "./3_layout/header";
-@import "./3_layout/main";
+@import "./3_layout/home";
 @import "./3_layout/footer";
 
-@import "./4_components/buttons";
+@import "./4_components/home_button";
+@import "./4_components/card_restaurant.scss";

@@ -1,5 +1,7 @@
 footer
 {
+    @include flex-r;
+    
     background-color: $custom-black;
     //display: flex;
     //flex-direction: column;
