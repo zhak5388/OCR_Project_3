@@ -1,0 +1,59 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.main_picture_restaurant
+{
+    @include border(orange);
+    width: 100%;
+    height: 200px;
+
+    img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.menu
+{
+    margin-top: -$overlap-menupage-illustration;
+    border-top-left-radius: $overlap-menupage-illustration;
+    border-top-right-radius:$overlap-menupage-illustration;
+    background-color: $background-secondary;
+
+    &__name-restaurant
+    {
+        display: flex;
+        justify-content: space-between;
+
+        font-weight: normal;
+
+        &__title
+        {
+            font-family: 'Shrikhand', cursive;
+        }
+    }
+
+    &__subsection
+    {
+        &__title
+        {
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 16px;
+            padding-bottom: 5px;
+
+            border-bottom: 3px solid $color-tertiary;
+        }
+    }
+
+    &__order-button
+    {
+        margin: auto;
+    }
+    
+}

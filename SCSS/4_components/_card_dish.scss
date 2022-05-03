@@ -1,0 +1,58 @@
+.card_dish
+{
+    background-color: $background-primary;
+    border-radius: 20px;
+    //padding: 10px;
+    @include border(blue);
+
+    /*
+    &__first
+    {
+        margin:0;
+        @include border(orange);
+    }
+
+    &__second
+    {
+        margin: 0;
+        @include border(green);
+        transform: scaleX(0.5);
+    }
+    */
+    //display: flex;
+    //flex-wrap: nowrap;
+    //justify-content: space-between;
+
+    position: relative;
+    height: 70px;
+    &__first
+    {
+        //width: 99%;
+        @include border(red);
+        height: 70px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        h3, p
+        {
+            margin:0;
+        }
+
+    }
+    &__second
+    {
+        background-color: $color-tertiary;
+        width: 100px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        //transform: scaleX(1);
+        //transform:skewX(200%);
+        //transform-origin: 85px;
+        
+        height: 70px;
+        position: absolute;
+        top: 0px;
+        right: -100px;
+    }
+}
