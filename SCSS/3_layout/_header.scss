@@ -3,7 +3,6 @@
 header
 {
     @include flex-r;
-    //margin: auto;
     
     height: $height-header;
 
@@ -38,5 +37,14 @@ header
 
         color: $custom-black;
         font-size: 20px;
+    }
+}
+
+.home-page
+{
+    header
+    {
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+        margin-bottom: 5px;
     }
 }

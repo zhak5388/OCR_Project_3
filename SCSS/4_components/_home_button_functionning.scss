@@ -4,8 +4,7 @@
     height: $functionning-button-height;
     background-color: $custom-light-grey;
     border-radius: 20px;
-    box-shadow: 0 19px 38px red, 0 15px 12px blue;
-    //box-shadow: 0 10px 5px $custom-grey;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.10),-4px -0px 10px rgba(0,0,0,0.10);
 
     //A_CORRIGER !!!
     display: flex;
@@ -50,6 +49,19 @@
     //TEMPORAIRE !!! (Utiliser rendu fin)
     &:hover
     {
-        background-color: $color-primary;
+        background-color: lighten($color-primary,35%);
+        
+        i
+        {
+            color:$color-primary;
+        }
     }
 }
+
+/*
+#testbox
+{
+    //box-shadow: 50px -100px 2px red;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.10),-4px -0px 10px rgba(0,0,0,0.10);
+}
+*/

@@ -66,9 +66,13 @@ header .back_home_page {
   font-size: 20px;
 }
 
+.home-page header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+}
+
 .container_wrapper__location {
   background-color: #eaeaea;
-  border-top: 10px solid black;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -175,7 +179,7 @@ footer .content_wrapper ul {
   height: 70px;
   background-color: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 0 19px 38px red, 0 15px 12px blue;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -4px 0px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   gap: 10%;
@@ -206,9 +210,19 @@ footer .content_wrapper ul {
   font-weight: bold;
 }
 .functionning-button:hover {
-  background-color: #9356DC;
+  background-color: #f2eafb;
+}
+.functionning-button:hover i {
+  color: #9356DC;
 }
 
+/*
+#testbox
+{
+    //box-shadow: 50px -100px 2px red;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.10),-4px -0px 10px rgba(0,0,0,0.10);
+}
+*/
 .gradiant_button {
   height: 60px;
   width: 220px;
@@ -227,8 +241,8 @@ footer .content_wrapper ul {
   width: 100%;
   height: 250px;
   border-radius: 25px;
-  background-color: white;
-  border: 1px dashed blue;
+  background-color: #fcfcfc;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1), -3px 0px 9px rgba(0, 0, 0, 0.1), 3px 0px 9px rgba(0, 0, 0, 0.1);
 }
 .card_restaurant__content {
   width: 100%;
@@ -309,6 +323,9 @@ footer .content_wrapper ul {
   transform: scaleY(17%);
   transform-origin: top right;
   transition: transform 3s ease-in-out;
+}
+.card_restaurant:hover {
+  background-color: #FFFFFF;
 }
 
 .card_dish {
