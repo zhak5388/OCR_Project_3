@@ -20,3 +20,11 @@
 {
     @include flex-center(column)
 }
+
+@mixin heart-zindex($index:auto)
+{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    z-index:$index;
+}

@@ -19,6 +19,7 @@
         {
             //@include border(red);
             height: 75%;
+            //z-index:4;
 
             &__main
             {
@@ -80,8 +81,51 @@
 
             &__favorite
             {
-                @include border(blue);
-                font-size: 25px;
+                font-size: $heart-size;
+                height: $heart-size;
+                width: $heart-size;
+ 
+                position: relative;
+                &__up
+                {
+                    @include heart-zindex(3);          
+                }
+
+                &::after
+                {
+                    content: "";
+                    display: block;
+                        
+                    height: $heart-size;
+                    width: $heart-size;
+
+                    //background-color: $background-primary;
+                    background-color: orange;
+                    @include heart-zindex(2);
+
+                    transform: scaleY(93%);
+                }
+
+                &__behind
+                {
+                    background-image: linear-gradient($color-secondary,$color-primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+
+                    @include heart-zindex(1);
+                }
+
+
+                &:hover
+                {
+                    &::after
+                    {
+                        transform: scaleY(17%);
+                        transform-origin: top right;
+                        transition: transform 3s ease-in-out;
+                    }
+                }
             }
 
         }

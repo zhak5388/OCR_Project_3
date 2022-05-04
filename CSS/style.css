@@ -23,12 +23,12 @@ a:visited {
 }
 
 .content_wrapper {
-  width: calc(100% - 40px);
+  width: calc(100% - 60px);
 }
 
 .container_wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 header {
@@ -84,7 +84,8 @@ header .back_home_page {
 }
 .container_wrapper__title {
   background-color: #f6f6f6;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .container_wrapper__title section {
   display: flex;
@@ -99,6 +100,10 @@ header .back_home_page {
 .container_wrapper__title p {
   width: 90%;
 }
+.container_wrapper__functionning {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .container_wrapper__functionning section {
   display: flex;
   flex-direction: column;
@@ -111,19 +116,39 @@ header .back_home_page {
 }
 .container_wrapper__restaurants {
   background-color: #f6f6f6;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .container_wrapper__restaurants section {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+.container_wrapper__restaurants h2 {
+  margin-top: 0;
+}
 
+/*
+.homepage
+{
+    &::after
+    {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+        z-index: 10;
+    }
+}
+*/
 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #353535;
+  padding-top: 25px;
 }
 footer .content_wrapper {
   color: white;
@@ -131,6 +156,7 @@ footer .content_wrapper {
 footer .content_wrapper div {
   height: 20px;
   width: 100px;
+  margin-bottom: 20px;
 }
 footer .content_wrapper div img {
   width: 100%;
@@ -149,7 +175,7 @@ footer .content_wrapper ul {
   height: 70px;
   background-color: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 0 10px 5px #eaeaea;
+  box-shadow: 0 19px 38px red, 0 15px 12px blue;
   display: flex;
   align-items: center;
   gap: 10%;
@@ -246,8 +272,43 @@ footer .content_wrapper ul {
   color: black;
 }
 .card_restaurant__content__body__favorite {
-  border: 1px dashed blue;
-  font-size: 25px;
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.card_restaurant__content__body__favorite__up {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+}
+.card_restaurant__content__body__favorite::after {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  transform: scaleY(93%);
+}
+.card_restaurant__content__body__favorite__behind {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.card_restaurant__content__body__favorite:hover::after {
+  transform: scaleY(17%);
+  transform-origin: top right;
+  transition: transform 3s ease-in-out;
 }
 
 .card_dish {

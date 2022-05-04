@@ -28,7 +28,10 @@
     &__title
     {
         background-color: $custom-light-grey;
-        padding-bottom: 50px;
+
+        padding-top: $padding-between-section-home;
+        padding-bottom: $padding-between-section-home;
+
         //@include border;
         section
         {
@@ -48,6 +51,9 @@
     }
     &__functionning
     {
+        padding-top: $padding-between-section-home;
+        padding-bottom: $padding-between-section-home;
+
         section
         {
             @include flex-c;
@@ -64,11 +70,34 @@
     &__restaurants
     {
         background-color: $custom-light-grey;
+
+        padding-top: $padding-between-section-home;
+        padding-bottom: $padding-between-section-home;
+
         section
         {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
+
+        h2
+        {
+            margin-top: 0;
+        }
     }
 }
+/*
+.homepage
+{
+    &::after
+    {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+        z-index: 10;
+    }
+}
+*/
