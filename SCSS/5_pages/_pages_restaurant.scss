@@ -49,6 +49,14 @@ main
 
             border-bottom: 3px solid $color-tertiary;
         }
+
+        &__content
+        {
+            height: $height-subsection-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 
     &__order-button

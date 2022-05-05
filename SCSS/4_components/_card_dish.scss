@@ -6,7 +6,7 @@
     background-color: $background-primary;
     border-radius: 20px;
 
-    height: $height-card-dish;
+    height: calc(($height-subsection-content - $gap-between-dish-card) / 3);
 
     display: flex;
     flex-direction: row;
@@ -126,4 +126,50 @@
     transition-property: width, transform;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
+}
+
+//Animation fondu progressive
+.card_dish
+{
+    //marche pour translate
+    //transition: transform 10s ease-in-out;
+    //transform: translateY(100px);
+
+    //ne marche pas pour opacity sans declencheur
+    //opacity: 0;
+    //transition: opacity 10s ease-in-out;
+
+    //animation: fondu_progressive 5s forwards;
+    &__first
+    {
+        animation: fondu_progressive $animation-time forwards;
+    }
+
+    &__second
+    {
+        opacity: 0;
+        animation: fondu_progressive $animation-time forwards calc($animation-time * 0.25);
+    }
+
+    &__third
+    {
+        opacity: 0;
+        animation: fondu_progressive $animation-time forwards calc($animation-time * 0.50);
+    }
+    
+}
+
+@keyframes fondu_progressive
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(calc($gap-between-dish-card / 2));
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

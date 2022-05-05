@@ -28,13 +28,18 @@ $heart-size:25px;
 
 $overlap-menupage-illustration:30px;
 
-$height-card-dish: 70px;
+//$height-card-dish: 70px; (Depreciated)
 $padding-element-card-dish: 10px;
 
 //PB (Doit certainment faire une fonction)
 $width-dish-price: 20%;
 $max-width-dish-name: 60%;
 $min-width-dish-name: 80%;
+
+//Fondu progressive
+$height-subsection-content: 250px;
+$gap-between-dish-card: 20px;
+$animation-time: 1500ms;
 
 
 
