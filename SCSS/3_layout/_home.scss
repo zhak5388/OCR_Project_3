@@ -87,17 +87,54 @@
         }
     }
 }
-/*
-.homepage
+
+
+.home-page
 {
+    /*
     &::after
     {
+        position: fixed;
+        top:0;
+        left:0;
         content: "";
         display: block;
         width: 100%;
         height: 100%;
         background-color: orange;
         z-index: 10;
+        opacity: 1;
     }
+    */
+    
+    &::after
+    {
+        position: fixed;
+        top:0;
+        left:0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+
+        animation: testo 10s forwards;
+        //animation-name: testo;
+    }
+
+    @keyframes testo 
+    {
+        from
+        {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        to
+        {
+            opacity: 0;
+            z-index:-1;
+        }
+    }
+    
 }
-*/

@@ -1,58 +1,129 @@
 .card_dish
 {
+    //@include border(blue);
+    //background-color: blue;
+
     background-color: $background-primary;
     border-radius: 20px;
-    //padding: 10px;
-    @include border(blue);
 
-    /*
-    &__first
+    height: $height-card-dish;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    h3, p, i
     {
         margin:0;
-        @include border(orange);
+        padding:0;
     }
 
-    &__second
+    &__name
     {
-        margin: 0;
-        @include border(green);
-        transform: scaleX(0.5);
-    }
-    */
-    //display: flex;
-    //flex-wrap: nowrap;
-    //justify-content: space-between;
-
-    position: relative;
-    height: 70px;
-    &__first
-    {
-        //width: 99%;
-        @include border(red);
-        height: 70px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
+        //@include border(orange);
+        //background-color: orange;
+        
+        //width: $max-width-dish-name;
+        width: 80%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         h3, p
         {
-            margin:0;
+            //@include border(cyan);
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            padding-left: $padding-element-card-dish;
         }
 
+        h3
+        {
+            padding-top: $padding-element-card-dish;
+        }
+
+        p
+        {
+            padding-bottom: $padding-element-card-dish;
+        }
     }
-    &__second
+
+    &__price
     {
-        background-color: $color-tertiary;
-        width: 100px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        //transform: scaleX(1);
-        //transform:skewX(200%);
-        //transform-origin: 85px;
+        //@include border(red);
+        //background-color: red;
         
-        height: 70px;
-        position: absolute;
-        top: 0px;
-        right: -100px;
+        //width: $width-dish-price;
+        width: 20%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+
+        p
+        {
+            padding-bottom: $padding-element-card-dish;
+            font-weight: bold;
+        }
     }
+
+    &__basket
+    {
+        //@include border(black);
+        
+        background-color: $color-tertiary;
+        color: $background-primary;
+        width:0%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i
+        {
+            overflow: hidden;
+        }
+    }
+   
+    
+    &:hover
+    {
+        .card_dish
+        {
+            &__name
+            {
+                //width: $min-width-dish-name;
+                width: 60%;
+
+            }
+        
+            &__basket
+            {
+                //width: calc(100% - $min-width-dish-name - $width-dish-price);
+                width: 20%;
+                i
+                {
+                    transform: rotate(360deg);
+                }  
+            }
+        }
+    }
+}
+
+.card_dish__name, .card_dish__basket, .card_dish__basket i
+{
+    //transition: width 1s ease-in-out;
+
+    transition-property: width, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }

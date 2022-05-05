@@ -100,11 +100,13 @@
                     height: $heart-size;
                     width: $heart-size;
 
-                    //background-color: $background-primary;
-                    background-color: orange;
+                    background-color: $background-primary;
+                    //background-color: orange;
                     @include heart-zindex(2);
 
                     transform: scaleY(93%);
+                    transform-origin: top right;
+                    transition: transform 3s ease-in-out;
                 }
 
                 &__behind
@@ -123,8 +125,8 @@
                     &::after
                     {
                         transform: scaleY(17%);
-                        transform-origin: top right;
-                        transition: transform 3s ease-in-out;
+                        //transform-origin: top right;
+                        //transition: transform 0.5s ease-in-out;
                     }
                 }
             }
