@@ -157,17 +157,62 @@ header .back_home_page {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: orange;
-  animation: testo 0s forwards;
+  background-color: #FFFFFF;
+  z-index: 10;
+  animation: spinner-background 2.5s forwards;
 }
-@keyframes testo {
-  from {
+.home-page::before {
+  position: fixed;
+  content: "";
+  top: 50%;
+  left: 50%;
+  display: block;
+  background-color: #FFFFFF;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 30px solid #e4d5f6;
+  border-top-color: #9356DC;
+  translate: -50% -50%;
+  z-index: 11;
+  animation: spinner 2.5s forwards;
+}
+@keyframes spinner-background {
+  0% {
     opacity: 1;
     z-index: 10;
   }
-  to {
+  95% {
+    opacity: 1;
+    z-index: 10;
+  }
+  100% {
     opacity: 0;
-    z-index: -1;
+    z-index: -2;
+  }
+}
+@keyframes spinner {
+  0% {
+    opacity: 1;
+    z-index: 11;
+  }
+  10% {
+    opacity: 1;
+    z-index: 11;
+    transform: rotate(0deg);
+  }
+  90% {
+    opacity: 1;
+    z-index: 11;
+    transform: rotate(630deg);
+  }
+  95% {
+    opacity: 0;
+    z-index: -2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
   }
 }
 
@@ -430,18 +475,18 @@ footer .content_wrapper ul {
 }
 
 .card_dish__first {
-  animation: fondu_progressive 1500ms forwards;
+  animation: dish_progressive_display 1500ms forwards;
 }
 .card_dish__second {
   opacity: 0;
-  animation: fondu_progressive 1500ms forwards 375ms;
+  animation: dish_progressive_display 1500ms forwards 375ms;
 }
 .card_dish__third {
   opacity: 0;
-  animation: fondu_progressive 1500ms forwards 750ms;
+  animation: dish_progressive_display 1500ms forwards 750ms;
 }
 
-@keyframes fondu_progressive {
+@keyframes dish_progressive_display {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -457,7 +502,6 @@ main {
 }
 
 .main_picture_restaurant {
-  border: 1px dashed orange;
   width: 100%;
   height: 200px;
 }
@@ -486,6 +530,12 @@ main {
   font-weight: normal;
   font-size: 16px;
   padding-bottom: 5px;
+}
+.menu__subsection__title::after {
+  content: "";
+  display: block;
+  width: 35px;
+  margin-top: 5px;
   border-bottom: 3px solid #99E2D0;
 }
 .menu__subsection__content {
@@ -495,7 +545,10 @@ main {
   justify-content: space-between;
 }
 .menu__order-button {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

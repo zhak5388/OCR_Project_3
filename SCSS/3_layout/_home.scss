@@ -116,25 +116,91 @@
         display: block;
         width: 100%;
         height: 100%;
-        background-color: orange;
+        background-color: $background-primary;
+        z-index: 10;
 
-        animation: testo 0s forwards;
-        //animation-name: testo;
+        animation: spinner-background $loading-spinner-animation-time forwards;
     }
 
-    @keyframes testo 
+    &::before
     {
-        from
+        position: fixed;
+        content: "";
+        top: 50%;
+        left: 50%;
+        display: block;
+        background-color: $background-primary;
+        width: $spinner-size;
+        height: $spinner-size;
+        border-radius: 50%;
+        border: calc($spinner-size * $spinner-arc-proportion) solid lighten($color-primary,30%);
+        border-top-color: $color-primary;
+        translate:-50% -50%;
+        //transform: translate(-50%,-50%);
+        z-index: 11;
+
+        animation: spinner $loading-spinner-animation-time forwards;
+        
+
+    }
+
+    @keyframes spinner-background 
+    {
+        0%
         {
             opacity: 1;
             z-index: 10;
         }
 
-        to
+        95%
+        {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        100%
         {
             opacity: 0;
-            z-index:-1;
+            z-index: -2;
         }
+
+    }
+
+    @keyframes spinner 
+    {
+        0%
+        {
+            //transform: translate(-50%,-50%);
+            opacity: 1;
+            z-index: 11;
+        }
+
+        10%
+        {
+            opacity: 1;
+            z-index: 11;
+            transform: rotate(0deg);
+        }
+
+        90%
+        {
+            opacity: 1;
+            z-index: 11;
+            transform: rotate(calc(360deg * $number-spin));
+        }
+
+        95%
+        {
+            opacity: 0;
+            z-index: -2;
+        }
+
+        100%
+        {
+            opacity: 0;
+            z-index: -2;
+        }
+        
     }
     
 }

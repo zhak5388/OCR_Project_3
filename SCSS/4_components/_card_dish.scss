@@ -139,27 +139,27 @@
     //opacity: 0;
     //transition: opacity 10s ease-in-out;
 
-    //animation: fondu_progressive 5s forwards;
+    //animation: dish_progressive_display 5s forwards;
     &__first
     {
-        animation: fondu_progressive $animation-time forwards;
+        animation: dish_progressive_display $dish-progressive-display-animation-time forwards;
     }
 
     &__second
     {
         opacity: 0;
-        animation: fondu_progressive $animation-time forwards calc($animation-time * 0.25);
+        animation: dish_progressive_display $dish-progressive-display-animation-time forwards calc($dish-progressive-display-animation-time * 0.25);
     }
 
     &__third
     {
         opacity: 0;
-        animation: fondu_progressive $animation-time forwards calc($animation-time * 0.50);
+        animation: dish_progressive_display $dish-progressive-display-animation-time forwards calc($dish-progressive-display-animation-time * 0.50);
     }
     
 }
 
-@keyframes fondu_progressive
+@keyframes dish_progressive_display
 {
     from
     {

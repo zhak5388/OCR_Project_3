@@ -28,6 +28,8 @@ $heart-size:25px;
 
 $overlap-menupage-illustration:30px;
 
+$margin-between-order-button: 40px;
+
 //$height-card-dish: 70px; (Depreciated)
 $padding-element-card-dish: 10px;
 
@@ -39,7 +41,14 @@ $min-width-dish-name: 80%;
 //Fondu progressive
 $height-subsection-content: 250px;
 $gap-between-dish-card: 20px;
-$animation-time: 1500ms;
+$dish-progressive-display-animation-time: 1500ms;
+
+//Loading Spinner
+$loading-spinner-animation-time: 2.5s;
+$spinner-size: 150px; //mettre une fonction en fonction taille ecran?
+$spinner-arc-proportion: 0.20;
+$number-spin: 1.75;
+
 
 
 
