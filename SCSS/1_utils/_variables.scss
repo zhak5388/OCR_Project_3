@@ -23,8 +23,10 @@ $functionning-button-circle-size:25px;
 $card-restaurant-border-radius:25px;
 $card-restaurant-color-new-box:#75e8d1;
 $card-restaurant-new-box-font-color:#008f69;
+$card-restaurant-percentage-darkening:1%;
 
 $heart-size:25px;
+$heart-filling-animation-time:1s;
 
 $overlap-menupage-illustration:30px;
 
@@ -33,6 +35,7 @@ $margin-between-order-button: 40px;
 //$height-card-dish: 70px; (Depreciated)
 $padding-element-card-dish: 10px;
 
+$dish-selection-animation-time: 1s;
 //PB (Doit certainment faire une fonction)
 $width-dish-price: 20%;
 $max-width-dish-name: 60%;

@@ -124,7 +124,7 @@
     //transition: width 1s ease-in-out;
 
     transition-property: width, transform;
-    transition-duration: 1s;
+    transition-duration: $dish-selection-animation-time;
     transition-timing-function: ease-in-out;
 }
 
@@ -139,7 +139,6 @@
     //opacity: 0;
     //transition: opacity 10s ease-in-out;
 
-    //animation: dish_progressive_display 5s forwards;
     &__first
     {
         animation: dish_progressive_display $dish-progressive-display-animation-time forwards;
