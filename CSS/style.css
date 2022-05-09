@@ -562,32 +562,20 @@ main {
   }
   .menu section {
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
-  }
-  .menu section > * {
-    border: 1px dashed purple;
-  }
-  .menu section::after {
-    content: "P";
-    display: block;
-    width: 100%;
-    border: 1px dashed blue;
-  }
-  .menu section::after {
-    content: "N";
-    display: block;
-    width: 100%;
-    border: 1px dashed blue;
   }
   .menu__name-restaurant {
     width: 100%;
   }
-  .menu__subsection__title {
-    width: 50%;
+  .menu__subsection {
+    width: 48%;
   }
-  .menu__subsection__content {
-    width: 50%;
+  .menu__subsection__title {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .restaurant-page main {
