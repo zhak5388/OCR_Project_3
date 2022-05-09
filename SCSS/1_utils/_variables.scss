@@ -49,7 +49,7 @@ $dish-progressive-display-animation-time: 1500ms;
 
 //Loading Spinner
 //$loading-spinner-animation-time: 2.5s;
-$loading-spinner-animation-time: 0.25s;
+$loading-spinner-animation-time: 14.5s;
 $spinner-size: 150px; //mettre une fonction en fonction taille ecran?
 $spinner-arc-proportion: 0.20;
 $number-spin: 1.75;
@@ -58,7 +58,9 @@ $number-spin: 1.75;
 //-------------------Desktop-Only--------------------------------//
 
 $breakpoint-desktop: 991px;
+$breakpoint-tablet: 768px;
 $width_wrapper-desktop:900px;
+$width_wrapper-tablet:720px;
 //$side_edge-desktop: 0px; (Depreciated?)
 
 $padding-top-bottom-footer-desktop:10px;

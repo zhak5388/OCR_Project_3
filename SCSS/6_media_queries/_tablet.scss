@@ -1,0 +1,65 @@
+@media all and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop)
+{
+    header
+    {
+        background-color: red;
+    }
+
+    //Typography
+
+    body
+    {
+        font-size: 14px;
+    }
+    .card_dish
+    {
+        p
+        {
+            font-size: 13px;
+        }
+    }
+
+    h1
+    {
+        font-size: 20px;
+    }
+    .content_wrapper
+    {
+        width: $width_wrapper-tablet;
+    }
+
+    .page
+    {
+        &__home
+        {
+            .container_wrapper
+            {
+                padding-right: calc((100% - $width_wrapper-tablet) / 2 );
+                padding-left: calc((100% - $width_wrapper-tablet) / 2 );
+            }
+
+        }
+
+        &__restaurant
+        {
+            .container_wrapper
+            {
+                width: $width_wrapper-tablet;
+            } 
+        }
+    }
+
+    //card-dish
+
+    //$height-subsection-content:100px;
+
+    .card_restaurant
+    {
+        width: calc(($width_wrapper-tablet - $gap-between-restaurant-card-desktop)/ 2);
+    }
+
+    .functionning-button
+    {
+        width: calc(($width_wrapper-tablet - $functionning-button-circle-size - $gap-between-functionning-button) / 3)
+    }
+}
