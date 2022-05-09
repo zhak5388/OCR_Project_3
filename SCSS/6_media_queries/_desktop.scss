@@ -1,0 +1,165 @@
+@media all and (min-width: $breakpoint-desktop)
+{
+    //wrapper
+    .content_wrapper
+    {
+        //width: calc(100% - (2 * $side_edge));
+        width: $width_wrapper-desktop;
+        //@include flex-c;
+    }
+
+    .container_wrapper
+    {
+        width: $width_wrapper-desktop;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .home-page
+    {
+        .container_wrapper
+        {
+            padding-right: calc((100% - $width_wrapper-desktop) / 2 );
+            padding-left: calc((100% - $width_wrapper-desktop) / 2 );
+        }
+    }
+
+    //content
+    /*
+    .main_picture_restaurant
+    {
+        width: $width_wrapper-desktop;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    */
+    .menu
+    {
+        box-sizing:border-box;
+        
+        section
+        {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            > *
+            {
+                @include border(purple);
+            }
+            &::after
+            {
+                content: "P";
+                display: block;
+                width: 100%;
+                @include border;
+            }
+            &::after
+            {
+                content: "N";
+                display: block;
+                width: 100%;
+                @include border;
+
+            }
+        }
+        
+        &__name-restaurant
+        {
+            width:100%;
+        }
+        &__subsection__title
+        {
+            width:50%;
+        }
+        &__subsection__content
+        {
+            width:50%;
+        }
+    }
+
+    .restaurant-page main
+    {
+        //background-color: lighten($background-secondary,5%);
+        background-color: $background-tertiary;
+    }
+
+    .home-page h2
+    {
+        text-align: center;
+    }
+
+    /*
+    .card_dish
+    {
+        width: 45%;
+        margin: auto;
+    }
+    */
+    
+    .card_restaurant
+    {
+        width: calc(($width_wrapper-desktop - $gap-between-restaurant-card-desktop)/ 2);
+    }
+
+    .functionning-button
+    {
+        width: calc(($width_wrapper-desktop - $functionning-button-circle-size - $gap-between-functionning-button) / 3)
+    }
+
+    .container_wrapper
+    {
+        &__functionning
+        {
+            section
+            {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                h2
+                {
+                    width:100%;
+                }
+            }
+            
+        }
+
+        &__restaurants
+        {
+            section
+            {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: $gap-between-restaurant-card-desktop;
+
+                h2
+                {
+                    width:100%;
+                }
+            }
+        }
+    }
+
+    
+    //footer
+    footer
+    {
+        padding-top: $padding-top-bottom-footer-desktop;
+        padding-bottom: $padding-top-bottom-footer-desktop;
+        .content_wrapper
+        {
+            div
+            {
+                //@include border;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            ul
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+    }
+}

@@ -24,6 +24,7 @@ $card-restaurant-border-radius:25px;
 $card-restaurant-color-new-box:#75e8d1;
 $card-restaurant-new-box-font-color:#008f69;
 $card-restaurant-percentage-darkening:1%;
+$gap-between-restaurant-card:20px;
 
 $heart-size:25px;
 $heart-filling-animation-time:1s;
@@ -47,11 +48,20 @@ $gap-between-dish-card: 20px;
 $dish-progressive-display-animation-time: 1500ms;
 
 //Loading Spinner
-$loading-spinner-animation-time: 2.5s;
+//$loading-spinner-animation-time: 2.5s;
+$loading-spinner-animation-time: 0.25s;
 $spinner-size: 150px; //mettre une fonction en fonction taille ecran?
 $spinner-arc-proportion: 0.20;
 $number-spin: 1.75;
 
+//---------------------------------------------------------------//
+//-------------------Desktop-Only--------------------------------//
 
+$breakpoint-desktop: 991px;
+$width_wrapper-desktop:900px;
+//$side_edge-desktop: 0px; (Depreciated?)
 
+$padding-top-bottom-footer-desktop:10px;
 
+$gap-between-restaurant-card-desktop: 30px;
+$gap-between-functionning-button: 30px;

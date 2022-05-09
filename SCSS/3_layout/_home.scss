@@ -58,7 +58,7 @@
         {
             @include flex-c;
             //justify-content:flex-end;
-            align-items: flex-end;
+            //align-items: flex-end;
             //AVOIR!!!
         }
 
@@ -78,7 +78,7 @@
         {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: $gap-between-restaurant-card;
         }
 
         h2
