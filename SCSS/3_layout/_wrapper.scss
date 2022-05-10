@@ -1,9 +1,6 @@
-// Definition des bords
-
 .content_wrapper
 {
     width: calc(100% - (2 * $side_edge));
-    //@include flex-c;
 }
 
 .container_wrapper

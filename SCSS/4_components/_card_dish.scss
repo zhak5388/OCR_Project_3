@@ -1,8 +1,5 @@
 .card_dish
 {
-    //@include border(blue);
-    //background-color: blue;
-
     background-color: $background-primary;
     border-radius: 20px;
     box-shadow: 0px 0px 8px rgb(0,0,0,0.2);
@@ -22,9 +19,7 @@
 
     &__name
     {
-        //@include border(orange);
-        //background-color: orange;
-        
+        //PE Fonction
         //width: $max-width-dish-name;
         width: 85%;
         height: 100%;
@@ -35,8 +30,6 @@
 
         h3, p
         {
-            //@include border(cyan);
-
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -57,9 +50,7 @@
 
     &__price
     {
-        //@include border(red);
-        //background-color: red;
-        
+        //PE Fonction
         //width: $width-dish-price;
         width: 15%;
         height: 100%;
@@ -77,9 +68,7 @@
     }
 
     &__basket
-    {
-        //@include border(black);
-        
+    {   
         background-color: $color-tertiary;
         color: $background-primary;
         width:0%;
@@ -102,6 +91,7 @@
         {
             &__name
             {
+                //PE Fonction
                 //width: $min-width-dish-name;
                 width: 70%;
 
@@ -109,7 +99,6 @@
         
             &__basket
             {
-                //width: calc(100% - $min-width-dish-name - $width-dish-price);
                 width: 15%;
                 i
                 {
@@ -122,24 +111,13 @@
 
 .card_dish__name, .card_dish__basket, .card_dish__basket i
 {
-    //transition: width 1s ease-in-out;
-
     transition-property: width, transform;
     transition-duration: $dish-selection-animation-time;
     transition-timing-function: ease-in-out;
 }
 
-//Animation fondu progressive
 .card_dish
 {
-    //marche pour translate
-    //transition: transform 10s ease-in-out;
-    //transform: translateY(100px);
-
-    //ne marche pas pour opacity sans declencheur
-    //opacity: 0;
-    //transition: opacity 10s ease-in-out;
-
     &__first
     {
         animation: dish_progressive_display $dish-progressive-display-animation-time forwards;

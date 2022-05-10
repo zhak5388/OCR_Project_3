@@ -1,20 +1,12 @@
-// 2-Mise en page main
-
-// 2-1 Belleville (location)
-
 .container_wrapper
 {
-    //color:red;
     &__location
     {
-        background-color: $custom-grey;
-        //A_CORRIGER
-        //box-shadow: 20px 20px 10px black;
-        //border-top:  10px solid black;
+        background-color: $background-tertiary;
         @include flex-r;
+
         p
         {
-            //@include border(orange);
             width: 140px;
             display: flex;
             justify-content: space-between;
@@ -27,12 +19,11 @@
     }
     &__title
     {
-        background-color: $custom-light-grey;
+        background-color: $background-secondary;
 
         padding-top: $padding-between-section-home;
         padding-bottom: $padding-between-section-home;
 
-        //@include border;
         section
         {
             @include flex-c;
@@ -46,7 +37,6 @@
         p
         {
             width: 90%;
-            //color: $custom-grey;
         }
     }
     &__functionning
@@ -57,9 +47,6 @@
         section
         {
             @include flex-c;
-            //justify-content:flex-end;
-            //align-items: flex-end;
-            //AVOIR!!!
         }
 
         h2
@@ -69,7 +56,7 @@
     }
     &__restaurants
     {
-        background-color: $custom-light-grey;
+        background-color: $background-secondary;
 
         padding-top: $padding-between-section-home;
         padding-bottom: $padding-between-section-home;
@@ -110,8 +97,6 @@
     {
         position: fixed;
         content: "";
-        //top: 50%;
-        //left: 50%;
         
         top: calc(50% - (($spinner-size * (1 + 2 * $spinner-arc-proportion)) / 2));
         left: calc(50% - (($spinner-size * (1 + 2 * $spinner-arc-proportion)) / 2));
@@ -123,8 +108,7 @@
         border-radius: 50%;
         border: calc($spinner-size * $spinner-arc-proportion) solid lighten($color-primary,30%);
         border-top-color: $color-primary;
-        //translate:-50% -50%;
-        //transform: translate(-50%,-50%);
+
         z-index: 11;
 
         animation: spinner $loading-spinner-animation-time forwards;

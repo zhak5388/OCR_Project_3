@@ -2,11 +2,10 @@
 {
     width: calc(100% - ($functionning-button-circle-size / 2));
     height: $functionning-button-height;
-    background-color: $custom-light-grey;
+    background-color: $background-secondary;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.10),-4px -0px 10px rgba(0,0,0,0.10);
 
-    //A_CORRIGER !!!
     display: flex;
     align-items: center;
     gap: 10%;
@@ -14,8 +13,6 @@
     margin-bottom: 20px;
 
     position: relative;
-
-    //@include border;
 
     &__number
     {
@@ -38,7 +35,6 @@
     {
         margin-left: 10%;
         color:grey;
-        //A VOIR !!!
     }
 
     &__title
@@ -46,7 +42,6 @@
         font-weight: bold;
     }
 
-    //TEMPORAIRE !!! (Utiliser rendu fin)
     &:hover
     {
         background-color: lighten($color-primary,35%);
@@ -57,11 +52,3 @@
         }
     }
 }
-
-/*
-#testbox
-{
-    //box-shadow: 50px -100px 2px red;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.10),-4px -0px 10px rgba(0,0,0,0.10);
-}
-*/

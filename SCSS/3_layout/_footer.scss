@@ -2,10 +2,9 @@ footer
 {
     @include flex-r;
     
-    background-color: $custom-black;
+    background-color: $background-quaternary;
     padding-top: 25px;
-    //display: flex;
-    //flex-direction: column;
+    
     .content_wrapper
     {
         color:white;

@@ -2,10 +2,6 @@ $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
 
-$custom-grey:#eaeaea;
-$custom-light-grey:#f6f6f6;
-$custom-black:#353535;
-//new name backgroud
 $background-primary:#FFFFFF;
 $background-secondary:#f6f6f6;
 $background-tertiary:#eaeaea;
@@ -37,20 +33,22 @@ $margin-between-order-button: 40px;
 $padding-element-card-dish: 10px;
 
 $dish-selection-animation-time: 1s;
-//PB (Doit certainment faire une fonction)
+
+//Fonction à PE mettre en place
+/*
 $width-dish-price: 20%;
 $max-width-dish-name: 60%;
 $min-width-dish-name: 80%;
+*/
 
-//Fondu progressive
+//Dish progressive display animation
 $height-subsection-content: 250px;
 $gap-between-dish-card: 20px;
 $dish-progressive-display-animation-time: 1500ms;
 
 //Loading Spinner
-//$loading-spinner-animation-time: 2.5s;
-$loading-spinner-animation-time: 0.5s;
-$spinner-size: 150px; //mettre une fonction en fonction taille ecran?
+$loading-spinner-animation-time: 2s;
+$spinner-size: 150px;
 $spinner-arc-proportion: 0.20;
 $number-spin: 1.75;
 
@@ -59,9 +57,9 @@ $number-spin: 1.75;
 
 $breakpoint-desktop: 991px;
 $breakpoint-tablet: 768px;
+
 $width_wrapper-desktop:900px;
 $width_wrapper-tablet:720px;
-//$side_edge-desktop: 0px; (Depreciated?)
 
 $padding-top-bottom-footer-desktop:10px;
 

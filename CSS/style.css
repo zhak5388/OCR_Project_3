@@ -339,6 +339,11 @@ template {
   display: none;
 }
 
+/*
+$width-dish-price: 20%;
+$max-width-dish-name: 60%;
+$min-width-dish-name: 80%;
+*/
 body {
   box-sizing: border-box;
 }
@@ -481,7 +486,7 @@ header .back_home_page {
   height: 100%;
   background-color: #FFFFFF;
   z-index: 10;
-  animation: spinner-background 0.5s forwards;
+  animation: spinner-background 2s forwards;
 }
 .page__home::before {
   position: fixed;
@@ -496,7 +501,7 @@ header .back_home_page {
   border: 30px solid #e4d5f6;
   border-top-color: #9356DC;
   z-index: 11;
-  animation: spinner 0.5s forwards;
+  animation: spinner 2s forwards;
 }
 @keyframes spinner-background {
   0% {
@@ -607,13 +612,6 @@ footer .content_wrapper ul {
   color: #9356DC;
 }
 
-/*
-#testbox
-{
-    //box-shadow: 50px -100px 2px red;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.10),-4px -0px 10px rgba(0,0,0,0.10);
-}
-*/
 .gradiant_button {
   height: 60px;
   width: 220px;
