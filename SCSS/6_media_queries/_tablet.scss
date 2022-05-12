@@ -1,10 +1,5 @@
 @media all and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop)
 {
-    header
-    {
-        background-color: red;
-    }
-
     //Typography
 
     body
@@ -54,9 +49,6 @@
             } 
         }
     }
-
-    //Question
-    //$height-subsection-content:100px;
 
     .card_restaurant
     {

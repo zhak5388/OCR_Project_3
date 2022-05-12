@@ -22,7 +22,6 @@ $card-restaurant-new-box-font-color:#008f69;
 $card-restaurant-percentage-darkening:1%;
 $gap-between-restaurant-card:20px;
 
-//$heart-size:25px;
 $heart-size:25px;
 $heart-filling-animation-time:1s;
 
@@ -30,31 +29,23 @@ $overlap-menupage-illustration:30px;
 
 $margin-between-order-button: 40px;
 
-//$height-card-dish: 70px; (Depreciated)
 $padding-element-card-dish: 10px;
-
 $dish-selection-animation-time: 1s;
-
-//Fonction à PE mettre en place
-/*
-$width-dish-price: 20%;
-$max-width-dish-name: 60%;
-$min-width-dish-name: 80%;
-*/
+$width-dish-price:15;
 
 //Dish progressive display animation
-$height-subsection-content: 250px;
+$height-subsection-content: 220px;
 $gap-between-dish-card: 20px;
 $dish-progressive-display-animation-time: 1500ms;
 
 //Loading Spinner
-$loading-spinner-animation-time: 0.5s;//2s;
+$loading-spinner-animation-time: 2s;
 $spinner-size: 150px;
 $spinner-arc-proportion: 0.20;
 $number-spin: 1.75;
 
 //---------------------------------------------------------------//
-//-------------------Desktop-Only--------------------------------//
+//-------------------Tablet-Desktop-Only------------------------//
 
 $breakpoint-desktop: 991px;
 $breakpoint-tablet: 768px;

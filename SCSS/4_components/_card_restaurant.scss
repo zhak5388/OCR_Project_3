@@ -51,7 +51,6 @@
         {
             width: 100%;
             height: 25%;
-            //background-color: orange;
             background-color: darken($background-primary,$card-restaurant-percentage-darkening);
 
             box-sizing: border-box;
@@ -86,6 +85,5 @@
     &:hover .card_restaurant__content__body
     {
         background-color: $background-primary;
-        //background-color: red;
     }
 }

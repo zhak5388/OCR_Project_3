@@ -17,11 +17,19 @@
         padding:0;
     }
 
+    p
+    {
+        font-size: 13.5px;
+    }
+
+    h3
+    {
+        font-size: 16px;
+    }
+
     &__name
     {
-        //PE Fonction
-        //width: $max-width-dish-name;
-        width: 85%;
+        width: calc( (100 - #{$width-dish-price}) * 1%);
         height: 100%;
         
         display: flex;
@@ -50,9 +58,7 @@
 
     &__price
     {
-        //PE Fonction
-        //width: $width-dish-price;
-        width: 15%;
+        width: calc(#{$width-dish-price} * 1%);
         height: 100%;
         
         display: flex;
@@ -91,15 +97,13 @@
         {
             &__name
             {
-                //PE Fonction
-                //width: $min-width-dish-name;
-                width: 70%;
+                width: calc( (100 - (2 * #{$width-dish-price}) ) * 1%);
 
             }
         
             &__basket
             {
-                width: 15%;
+                width: calc(#{$width-dish-price} * 1%);
                 i
                 {
                     transform: rotate(360deg);

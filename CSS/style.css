@@ -339,11 +339,6 @@ template {
   display: none;
 }
 
-/*
-$width-dish-price: 20%;
-$max-width-dish-name: 60%;
-$min-width-dish-name: 80%;
-*/
 body {
   box-sizing: border-box;
 }
@@ -369,6 +364,14 @@ a {
 }
 a:visited {
   color: inherit;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3, p {
+  font-size: 16px;
 }
 
 .content_wrapper {
@@ -490,7 +493,7 @@ header .back_home_page {
   height: 100%;
   background-color: #FFFFFF;
   z-index: 10;
-  animation: spinner-background 0.5s forwards;
+  animation: spinner-background 2s forwards;
 }
 .page__home::before {
   position: fixed;
@@ -505,7 +508,7 @@ header .back_home_page {
   border: 30px solid #e4d5f6;
   border-top-color: #9356DC;
   z-index: 11;
-  animation: spinner 0.5s forwards;
+  animation: spinner 2s forwards;
 }
 @keyframes spinner-background {
   0% {
@@ -600,7 +603,7 @@ footer .content_wrapper ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FFFFFF;
 }
 .functionning-button i {
   margin-left: 10%;
@@ -752,7 +755,7 @@ footer .content_wrapper ul {
   background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  height: 76.6666666667px;
+  height: 66.6666666667px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -762,8 +765,14 @@ footer .content_wrapper ul {
   margin: 0;
   padding: 0;
 }
+.card_dish p {
+  font-size: 13.5px;
+}
+.card_dish h3 {
+  font-size: 16px;
+}
 .card_dish__name {
-  width: 85%;
+  width: calc((100 - 15) * 1%);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -782,7 +791,7 @@ footer .content_wrapper ul {
   padding-bottom: 10px;
 }
 .card_dish__price {
-  width: 15%;
+  width: calc(15 * 1%);
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -806,10 +815,10 @@ footer .content_wrapper ul {
   overflow: hidden;
 }
 .card_dish:hover .card_dish__name {
-  width: 70%;
+  width: calc((100 - (2 * 15)) * 1%);
 }
 .card_dish:hover .card_dish__basket {
-  width: 15%;
+  width: calc(15 * 1%);
 }
 .card_dish:hover .card_dish__basket i {
   transform: rotate(360deg);
@@ -887,7 +896,7 @@ main {
   border-bottom: 3px solid #99E2D0;
 }
 .menu__subsection__content {
-  height: 250px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -900,26 +909,10 @@ main {
 }
 
 @media all and (min-width: 768px) {
-  /*
-  .content_wrapper
-  {
-      width: $width_wrapper-desktop;
-  }
-  */
-  .page__home {
-    /*
-    .container_wrapper
-    {
-        padding-right: calc((100% - $width_wrapper-desktop) / 2 );
-        padding-left: calc((100% - $width_wrapper-desktop) / 2 );
-    }
-    */
-  }
   .page__home h2 {
     text-align: center;
   }
   .page__restaurant .container_wrapper {
-    /*width: $width_wrapper-desktop;*/
     margin-right: auto;
     margin-left: auto;
   }
@@ -994,10 +987,6 @@ main {
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  header {
-    background-color: red;
-  }
-
   body {
     font-size: 14px;
   }
@@ -1034,10 +1023,6 @@ main {
   }
 }
 @media all and (min-width: 991px) {
-  header {
-    background-color: yellow;
-  }
-
   .content_wrapper {
     width: 900px;
   }

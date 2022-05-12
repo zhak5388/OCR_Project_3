@@ -28,13 +28,13 @@
         background-color: $color-primary;
 
         @include flex-c;
-        color: white;
+        color: $background-primary;
     }
 
     i
     {
         margin-left: 10%;
-        color:grey;
+        color: grey;
     }
 
     &__title
