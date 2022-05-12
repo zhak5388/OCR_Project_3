@@ -22,6 +22,7 @@ $card-restaurant-new-box-font-color:#008f69;
 $card-restaurant-percentage-darkening:1%;
 $gap-between-restaurant-card:20px;
 
+//$heart-size:25px;
 $heart-size:25px;
 $heart-filling-animation-time:1s;
 
@@ -47,7 +48,7 @@ $gap-between-dish-card: 20px;
 $dish-progressive-display-animation-time: 1500ms;
 
 //Loading Spinner
-$loading-spinner-animation-time: 2s;
+$loading-spinner-animation-time: 0.5s;//2s;
 $spinner-size: 150px;
 $spinner-arc-proportion: 0.20;
 $number-spin: 1.75;

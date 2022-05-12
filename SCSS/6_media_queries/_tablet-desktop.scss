@@ -137,4 +137,13 @@
         }
         
     }
+
+    .menu__subsection__title
+    {
+        &::after
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
