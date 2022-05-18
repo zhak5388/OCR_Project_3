@@ -614,6 +614,7 @@ footer .content_wrapper ul {
 }
 .functionning-button:hover {
   background-color: #f2eafb;
+  cursor: pointer;
 }
 .functionning-button:hover i {
   color: #9356DC;
